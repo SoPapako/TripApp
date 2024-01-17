@@ -7,7 +7,7 @@ function addUser() {
         "Content-Type": "application/json"
       },
       "data": JSON.stringify({
-        "citizenId": document.getElementById("citizenId").value,
+        
         "afm": document.getElementById("afm").value,
         "firstName": document.getElementById("firstName").value,
         "lastName": document.getElementById("lastName").value,
@@ -25,7 +25,7 @@ function addUser() {
   
   function clearForm() {
     // Clear the values in the form fields
-    document.getElementById("citizenId").value = "";
+    
     document.getElementById("afm").value = "";
     document.getElementById("firstName").value = "";
     document.getElementById("lastName").value = "";

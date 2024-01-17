@@ -39,7 +39,8 @@ $(document).ready(function() {
       row.append($('<td>').text(formatDate(item.departureDate)));
       row.append($('<td>').text(formatDate(item.arrivalDate)));
       row.append($('<td>').text(item.maxLimit));
-      row.append($('<td>').text(item.agencyId));
+      var agencyName = item.agency && item.agency.name ? item.agency.name : 'N/A';
+      row.append($('<td>').text(agencyName));
       tableBody.append(row);
     });
   }
